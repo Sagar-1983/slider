@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Castom slider</title>
+	<!-- castom css file -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<div class="slider">
+		<h1>This is Castom JS Slider</h1>
+		<div class="container">
+
+			<!-- pagination dots here -->
+			<div class="pagination">
+				<span class="dots active"></span>
+				<span class="dots"></span>
+				<span class="dots"></span>
+
+			</div>
+
+
+		    <div class="testimonial">
+			    <div class="slide-row" id="slide">
+				    <div class="slide-col">
+					    <div class="user-text">
+						<p>"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English"</p>
+						<h5>Lio</h5>
+						<p>Photographer USA</p>
+						<div class="usar-img">
+							<img src="img/img2.jpg">
+						</div>
+					</div>
+				</div>
+				<div class="slide-col">
+					<div class="user-text">
+						<p>"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English"</p>
+						<h5>Wiendi jack</h5>
+						<p>Photographer USA</p>
+						<div class="usar-img">
+							<img src="img/img2.jpg">
+						</div>
+					</div>
+				</div>
+				<div class="slide-col">
+					<div class="user-text">
+						<p>"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English"</p>
+						<h5>Jack</h5>
+						<p>Photographer USA</p>
+						<div class="usar-img">
+							<img src="img/img2.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+<!--Castom js JS  -->
+   <script>
+
+     var but =	document.getElementsByClassName('dots');
+     var slide = document.getElementById('slide');
+
+
+     but[0].onclick = function() {
+     	slide.style.transform = "translateX(0px)";
+
+     	for (i=0; i<3; i++) {
+     		but[i].classList.remove('active');
+     	}
+     	this.classList.add('active');
+     	
+     }
+     but[1].onclick = function() {
+     	slide.style.transform = "translateX(-800px)";
+     	for (i=0; i<3; i++) {
+     		but[i].classList.remove('active');
+     	}
+     	this.classList.add('active');
+     	
+     }
+     but[2].onclick = function() {
+     	slide.style.transform = "translateX(-1600px)";
+     	for (i=0; i<3; i++) {
+     		but[i].classList.remove('active');
+     	}
+     	this.classList.add('active');
+     	
+     }
+
+
+
+   </script>
+
+</body>
+</html>
